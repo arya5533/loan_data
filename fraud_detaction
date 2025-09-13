@@ -1,0 +1,3 @@
+fraud_loans = df[(df["previous_loan_defaults_on_file"]=="Yes") & (df["loan_status"]==1)]
+fraud_loans.to_csv("fraud_loans.csv", index=False)
+print("Suspicious loans saved to fraud_loans.csv")
